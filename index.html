@@ -1,0 +1,1214 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Magi Mockup</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <!-- icon sprite -->
+    <svg width="0" height="0" style="position: absolute">
+      <defs>
+        <symbol id="search" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" />
+          <path d="m20 20-3.5-3.5" />
+        </symbol>
+        <symbol id="gear" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="3" />
+          <path
+            d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"
+          />
+        </symbol>
+        <symbol id="folder" viewBox="0 0 24 24">
+          <path
+            d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </symbol>
+        <symbol id="x" viewBox="0 0 24 24">
+          <path d="M18 6 6 18M6 6l12 12" />
+        </symbol>
+        <symbol id="plus" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </symbol>
+        <symbol id="check" viewBox="0 0 24 24">
+          <path d="m5 12 5 5 9-10" />
+        </symbol>
+        <symbol id="refresh" viewBox="0 0 24 24">
+          <path
+            d="M21 12a9 9 0 0 1-15.5 6.2M3 12A9 9 0 0 1 18.5 5.8M18 2v4h-4M6 22v-4h4"
+          />
+        </symbol>
+        <symbol id="trash" viewBox="0 0 24 24">
+          <path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" />
+        </symbol>
+        <symbol id="alert" viewBox="0 0 24 24">
+          <path d="M12 3 2 20h20zM12 10v4M12 17.5v.1" />
+        </symbol>
+        <symbol id="pause" viewBox="0 0 24 24">
+          <path d="M8 5v14M16 5v14" />
+        </symbol>
+        <symbol id="play" viewBox="0 0 24 24">
+          <path d="M7 4v16l13-8z" />
+        </symbol>
+        <symbol id="dl" viewBox="0 0 24 24">
+          <path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16" />
+        </symbol>
+        <symbol id="kbd" viewBox="0 0 24 24">
+          <rect x="2" y="6" width="20" height="12" rx="2" />
+          <path d="M6 10h.1M10 10h.1M14 10h.1M18 10h.1M7 14h10" />
+        </symbol>
+        <symbol id="globe" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+        </symbol>
+        <symbol id="pal" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 3v18" />
+          <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" />
+        </symbol>
+        <symbol id="chart" viewBox="0 0 24 24">
+          <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
+        </symbol>
+        <symbol id="sparkle" viewBox="0 0 24 24">
+          <path
+            d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"
+          />
+        </symbol>
+        <symbol id="file" viewBox="0 0 24 24">
+          <path
+            d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5"
+          />
+        </symbol>
+        <symbol id="power" viewBox="0 0 24 24">
+          <path d="M12 3v9M6.3 6.8a8 8 0 1 0 11.4 0" />
+        </symbol>
+        <symbol id="chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol>
+        <symbol id="wifi" viewBox="0 0 24 24">
+          <path
+            d="M2 9a15 15 0 0 1 20 0M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M12 19.5v.1"
+          />
+        </symbol>
+        <symbol id="mk" viewBox="0 0 32 32">
+          <circle
+            cx="14"
+            cy="14"
+            r="8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+          />
+          <path
+            d="m20 20 7 7"
+            stroke="currentColor"
+            stroke-width="3.4"
+            stroke-linecap="round"
+          />
+          <circle cx="14" cy="14" r="2.5" fill="currentColor" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="topbar">
+      <b>Magi · UI mockup</b>
+      <span class="sp"></span>
+      <span class="seg" id="segLang"
+        ><button data-l="en">EN</button
+        ><button data-l="es" class="on">ES</button></span
+      >
+      <span class="seg" id="segTheme"
+        ><button data-t="light" class="on">Light</button
+        ><button data-t="dark">Dark</button></span
+      >
+    </div>
+    <aside class="side" id="nav"></aside>
+    <div class="cap" id="cap">
+      <span class="ct" id="capText"></span
+      ><span class="pg"
+        ><button id="prev">←</button><span id="count"></span
+        ><button id="next">→</button></span
+      >
+    </div>
+
+    <div class="page">
+      <!-- =================== SEARCH =================== -->
+      <h2 id="search">01 · Search window</h2>
+      <p class="note">
+        Frameless, centered, always on top; opens with the global hotkey, hides
+        on Esc or blur. The new <b>settings gear</b> sits at the bottom-left of
+        the footer. The footer status is a suggested addition (same data as the
+        tray status line).
+      </p>
+
+      <div class="row">
+        <div class="frame">
+          <div class="lbl">A · Empty <em>no query, index ready</em></div>
+          <div class="desk annots">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q"><span class="ph">Search your files</span></div>
+                <kbd>Ctrl+Shift+Space</kbd>
+              </div>
+              <div class="intro">
+                Search 12,480 files by name, words, or what they're about.
+              </div>
+              <div class="foot" style="position: relative">
+                <span class="gear hov"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="tip">Settings</span>
+                <span class="st"><i class="dot"></i>Up to date</span
+                ><span class="sp"></span>
+                <span class="k"><kbd>Esc</kbd> Close</span>
+              </div>
+            </div>
+            <div class="annot" style="top: auto; bottom: 6px">
+              Gear = new. Opens the Settings window (Ctrl+, as shortcut).
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">B · Empty, indexing <em>hint before typing</em></div>
+          <div class="desk">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q"><span class="ph">Search your files</span></div>
+              </div>
+              <div class="intro" style="padding-bottom: 14px">
+                Search 3,102 files by name, words, or what they're about.
+              </div>
+              <div class="hint">
+                <i class="dot busy"></i
+                ><span class="grow"
+                  >Still indexing, 9,378 files to go. Results may be
+                  incomplete.</span
+                >
+              </div>
+              <div class="foot">
+                <span class="gear"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="st"><i class="dot busy"></i>Indexing…</span
+                ><span class="sp"></span
+                ><span class="k"><kbd>Esc</kbd> Close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">C · Results <em>typing “contrato alquiler”</em></div>
+          <div class="desk">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q">
+                  contrato alquiler<span class="caret"></span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="res sel">
+                  <div class="thumb pdf">PDF</div>
+                  <div class="b">
+                    <div class="n">
+                      <mark>Contrato</mark> de <mark>alquiler</mark> 2025.pdf
+                    </div>
+                    <div class="p">C:\Users\Camilo\Documents\Casa\Legal</div>
+                    <div class="s">
+                      …el arrendatario se compromete a abonar el
+                      <mark>alquiler</mark> mensual antes del día 5…
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <div class="chips">
+                      <span class="chip">File name</span
+                      ><span class="chip">Words</span>
+                    </div>
+                    <span>page 3 · 2 days ago</span>
+                  </div>
+                </div>
+                <div class="res">
+                  <div class="thumb doc">DOC</div>
+                  <div class="b">
+                    <div class="n">
+                      Borrador <mark>contrato</mark> piso centro.docx
+                    </div>
+                    <div class="p">C:\Users\Camilo\Downloads</div>
+                    <div class="s">
+                      …cláusula de renovación y actualización anual del precio
+                      del <mark>alquiler</mark>…
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <div class="chips"><span class="chip">Meaning</span></div>
+                    <span>last week</span>
+                  </div>
+                </div>
+                <div class="res">
+                  <div class="thumb img"></div>
+                  <div class="b">
+                    <div class="n">IMG_2041.jpg</div>
+                    <div class="p">C:\Users\Camilo\Pictures\Scans</div>
+                    <div class="s">
+                      …<mark>CONTRATO</mark> DE ARRENDAMIENTO — Duración 12
+                      meses…
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <div class="chips">
+                      <span class="chip">Text in image</span>
+                    </div>
+                    <span>Mar 12</span>
+                  </div>
+                </div>
+                <div class="res">
+                  <div class="thumb code">RS</div>
+                  <div class="b">
+                    <div class="n">contract_parser.rs</div>
+                    <div class="p">C:\TETO\Projects\facturas\src</div>
+                    <div class="s">
+                      // parses <mark>alquiler</mark> and
+                      <mark>contrato</mark> clauses into typed records
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <div class="chips"><span class="chip">Words</span></div>
+                    <span>yesterday</span>
+                  </div>
+                </div>
+              </div>
+              <div class="foot">
+                <span class="gear"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="st"><i class="dot"></i>Up to date</span
+                ><span class="sp"></span>
+                <span class="k"><kbd>↑↓</kbd> Move</span
+                ><span class="k"><kbd>Enter</kbd> Open</span
+                ><span class="k"><kbd>Ctrl+Enter</kbd> Show in folder</span
+                ><span class="k"><kbd>Ctrl+C</kbd> Copy path</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">
+            D · Few results + feature hint
+            <em>&lt; 3 results, a feature is off</em>
+          </div>
+          <div class="desk">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q">
+                  sunset on the beach<span class="caret"></span>
+                </div>
+              </div>
+              <div class="list">
+                <div class="res sel">
+                  <div class="thumb img2"></div>
+                  <div class="b">
+                    <div class="n">beach-notes.txt</div>
+                    <div class="p">C:\Users\Camilo\Documents\Trips</div>
+                    <div class="s">
+                      …watched the <mark>sunset</mark> from the
+                      <mark>beach</mark> with everyone…
+                    </div>
+                  </div>
+                  <div class="meta">
+                    <div class="chips"><span class="chip">Words</span></div>
+                    <span>Aug 30</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hint">
+                <svg class="i"><use href="#sparkle" /></svg
+                ><span class="grow"
+                  ><b style="color: var(--ink); font-weight: 500"
+                    >Find images by what they show</b
+                  >
+                  is off. It can find photos by describing them.</span
+                ><span class="btn pri">Turn on (1.4 GB)</span
+                ><svg class="i x"><use href="#x" /></svg>
+              </div>
+              <div class="hint">
+                <svg class="i"><use href="#dl" /></svg
+                ><span class="grow"
+                  >Downloading Find images by what they show: 412 MB of 1.4 GB
+                  <div class="bar"><i style="width: 29%"></i></div
+                ></span>
+              </div>
+              <div class="foot">
+                <span class="gear"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="st"><i class="dot"></i>Up to date</span
+                ><span class="sp"></span
+                ><span class="k"><kbd>Enter</kbd> Open</span
+                ><span class="k"><kbd>Esc</kbd> Close</span>
+              </div>
+            </div>
+          </div>
+          <div class="lbl">
+            <em
+              >Both hint variants shown stacked; the app shows one at a time:
+              offer → progress → “Updating N files…”.</em
+            >
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">E · No match</div>
+          <div class="desk">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q">xyzzy plugh<span class="caret"></span></div>
+              </div>
+              <div class="state">
+                <svg class="i" style="width: 28px; height: 28px">
+                  <use href="#search" /></svg
+                ><span>No files match “xyzzy plugh”.</span>
+              </div>
+              <div class="foot">
+                <span class="gear"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="st"><i class="dot"></i>Up to date</span
+                ><span class="sp"></span
+                ><span class="k"><kbd>Esc</kbd> Close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">F · Error</div>
+          <div class="desk">
+            <div class="search">
+              <div class="input">
+                <svg class="i"><use href="#search" /></svg>
+                <div class="q">invoice<span class="caret"></span></div>
+              </div>
+              <div class="state">
+                <svg class="i" style="width: 28px; height: 28px">
+                  <use href="#alert" /></svg
+                ><span>Couldn't search the index.</span
+                ><span class="btn">Try again</span>
+              </div>
+              <div class="foot">
+                <span class="gear"
+                  ><svg class="i"><use href="#gear" /></svg></span
+                ><span class="st"
+                  ><i class="dot err"></i>3 files could not be read</span
+                ><span class="sp"></span
+                ><span class="k"><kbd>Esc</kbd> Close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== SETTINGS =================== -->
+      <h2 id="settings">02 · Settings window</h2>
+      <p class="note">
+        Solid window (never blurred), sidebar with 6 sections covering FR-9 /
+        M6. Content is grouped in rows (“cards”). Section 1 is the only one
+        already implemented (M6 Plan 5); the rest are the plan.
+      </p>
+
+      <div class="row">
+        <!-- 1 Folders -->
+        <div class="frame">
+          <div class="lbl">1 · Folders <em>implemented</em></div>
+          <div class="win">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a class="on"
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>Folders</h1>
+                <div style="display: flex; align-items: center">
+                  <h3 style="margin: 0; flex: 1">SEARCHED FOLDERS</h3>
+                  <span
+                    class="btn pri"
+                    style="display: inline-flex; gap: 6px; align-items: center"
+                    ><svg class="i" style="width: 13px; height: 13px">
+                      <use href="#plus" /></svg
+                    >Add folder</span
+                  >
+                </div>
+                <div class="stack">
+                  <div class="card">
+                    <svg class="i ic"><use href="#folder" /></svg>
+                    <div class="t">
+                      <b>C:\Users\Camilo\Documents</b><span>8,214 files</span>
+                    </div>
+                    <span class="badge ok">Watching for changes</span
+                    ><span class="tog on"></span
+                    ><svg class="i ic"><use href="#trash" /></svg>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic"><use href="#folder" /></svg>
+                    <div class="t">
+                      <b>D:\Projects</b><span>3,960 files</span>
+                    </div>
+                    <span class="badge">Checking now and then</span
+                    ><span class="tog on"></span
+                    ><svg class="i ic"><use href="#trash" /></svg>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic"><use href="#folder" /></svg>
+                    <div class="t">
+                      <b>C:\Users\Camilo\Pictures</b
+                      ><span>Paused, not searched</span>
+                    </div>
+                    <span class="badge">Paused</span><span class="tog"></span
+                    ><svg class="i ic"><use href="#trash" /></svg>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic" style="color: var(--warn)">
+                      <use href="#alert" />
+                    </svg>
+                    <div class="t">
+                      <b>E:\Backup</b
+                      ><span
+                        >Folder not found. Reconnect the drive; the index is
+                        kept.</span
+                      >
+                    </div>
+                    <span class="badge warn">Not found</span
+                    ><span class="btn">Retry</span
+                    ><svg class="i ic"><use href="#trash" /></svg>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic" style="color: var(--err)">
+                      <use href="#alert" />
+                    </svg>
+                    <div class="t">
+                      <b>C:\Users\Camilo\Desktop\Private</b
+                      ><span>Magi isn't allowed to read this folder.</span>
+                    </div>
+                    <span class="badge err">No access</span
+                    ><span class="btn">Open Settings</span
+                    ><svg class="i ic"><use href="#trash" /></svg>
+                  </div>
+                </div>
+                <h3>EXCLUSIONS</h3>
+                <div class="card" style="align-items: flex-start">
+                  <div class="t">
+                    <b>Ignored patterns</b
+                    ><span
+                      >One glob per line. Default system folders are always
+                      skipped.</span
+                    >
+                  </div>
+                  <div class="code" style="width: 300px">
+                    node_modules/**<br />*.tmp<br />**/.git/**
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Folders : types -->
+        <div class="frame">
+          <div class="lbl">
+            1b · Folders, continued <em>file types &amp; size (scroll)</em>
+          </div>
+          <div class="win">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a class="on"
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>Folders</h1>
+                <h3 style="margin-top: 0">FILE TYPES</h3>
+                <div class="card" style="flex-wrap: wrap; gap: 12px 0">
+                  <span class="chk"
+                    ><i class="on"
+                      ><svg class="i"><use href="#check" /></svg></i
+                    >Text</span
+                  >
+                  <span class="chk"
+                    ><i class="on"
+                      ><svg class="i"><use href="#check" /></svg></i
+                    >Code</span
+                  >
+                  <span class="chk"
+                    ><i class="on"
+                      ><svg class="i"><use href="#check" /></svg></i
+                    >PDF</span
+                  >
+                  <span class="chk"
+                    ><i class="on"
+                      ><svg class="i"><use href="#check" /></svg></i
+                    >Office documents</span
+                  >
+                  <span class="chk"
+                    ><i class="on"
+                      ><svg class="i"><use href="#check" /></svg></i
+                    >Images</span
+                  >
+                </div>
+                <h3>LIMITS</h3>
+                <div class="card">
+                  <div class="t">
+                    <b>Maximum file size</b
+                    ><span
+                      >Bigger files are skipped (name is still
+                      searchable).</span
+                    >
+                  </div>
+                  <div class="sel-box">
+                    50 MB
+                    <svg class="i" style="width: 12px">
+                      <use href="#chev" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="t">
+                    <b>Pause on battery</b
+                    ><span>Stop indexing when the laptop is unplugged.</span>
+                  </div>
+                  <span class="tog on"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Search features -->
+        <div class="frame">
+          <div class="lbl">2 · Search features <em>ADR-0010</em></div>
+          <div class="win">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a class="on"
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>Search features</h1>
+                <p style="font-size: 12.5px; color: var(--mute)">
+                  Optional add-ons downloaded once. After that everything runs
+                  on your computer; nothing is sent anywhere.
+                </p>
+                <div class="stack">
+                  <div class="card">
+                    <div class="t">
+                      <b>Search by meaning</b
+                      ><span
+                        >It finds files that talk about your query even when
+                        they use other words.</span
+                      ><br /><span style="color: var(--ok)"
+                        >Installed · 118 MB</span
+                      >
+                    </div>
+                    <span class="btn dng">Remove download</span
+                    ><span class="tog on"></span>
+                  </div>
+                  <div class="card">
+                    <div class="t">
+                      <b>Read text in images</b
+                      ><span
+                        >It makes the words in screenshots, scans and photos
+                        searchable.</span
+                      >
+                      <div class="bar"><i style="width: 64%"></i></div>
+                      <span>Updating 312 files… (64%)</span>
+                    </div>
+                    <span class="tog on"></span>
+                  </div>
+                  <div class="card">
+                    <div class="t">
+                      <b>Find images by what they show</b
+                      ><span>It can find photos by describing them.</span
+                      ><br /><span>Not downloaded · 1.4 GB</span>
+                    </div>
+                    <span class="btn pri">Turn on (1.4 GB)</span
+                    ><span class="tog"></span>
+                  </div>
+                  <div class="card">
+                    <div class="t">
+                      <b>Find images by what they show</b>
+                      <span class="badge err" style="margin-left: 6px"
+                        >Download failed</span
+                      ><span
+                        >Checksum didn't match. Nothing was installed.</span
+                      >
+                    </div>
+                    <span class="btn">Try again</span>
+                  </div>
+                </div>
+                <p style="font-size: 12px; color: var(--mute); margin-top: 6px">
+                  Turning a feature off keeps what it already found. “Remove
+                  download” frees the disk space.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 General -->
+        <div class="frame">
+          <div class="lbl">3 · General</div>
+          <div class="win">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a class="on"
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>General</h1>
+                <h3 style="margin-top: 0">SHORTCUT</h3>
+                <div class="card">
+                  <svg class="i ic"><use href="#kbd" /></svg>
+                  <div class="t">
+                    <b>Open search</b
+                    ><span>Click, then press the new combination.</span>
+                  </div>
+                  <div class="keys">
+                    <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Space</kbd>
+                  </div>
+                  <span class="btn">Change</span>
+                </div>
+                <div class="card" style="border-color: var(--warn)">
+                  <svg class="i ic" style="color: var(--warn)">
+                    <use href="#alert" />
+                  </svg>
+                  <div class="t">
+                    <b style="color: var(--warn)"
+                      >Ctrl+Alt+Space is used by another app</b
+                    ><span>Pick a different combination.</span>
+                  </div>
+                </div>
+                <h3>STARTUP</h3>
+                <div class="card">
+                  <svg class="i ic"><use href="#power" /></svg>
+                  <div class="t">
+                    <b>Launch at login</b
+                    ><span>Keep Magi available in the background.</span>
+                  </div>
+                  <span class="tog on"></span>
+                </div>
+                <h3>LANGUAGE</h3>
+                <div class="card">
+                  <svg class="i ic"><use href="#globe" /></svg>
+                  <div class="t">
+                    <b>Language</b
+                    ><span>Changes apply immediately, also in the tray.</span>
+                  </div>
+                  <div class="sel-box">
+                    System (English)
+                    <svg class="i" style="width: 12px">
+                      <use href="#chev" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <svg class="i ic"><use href="#search" /></svg>
+                  <div class="t">
+                    <b>Results shown</b
+                    ><span>Maximum number of results per search.</span>
+                  </div>
+                  <div class="sel-box">
+                    30
+                    <svg class="i" style="width: 12px">
+                      <use href="#chev" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 Appearance -->
+        <div class="frame">
+          <div class="lbl">4 · Appearance</div>
+          <div class="win">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a class="on"
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>Appearance</h1>
+                <h3 style="margin-top: 0">THEME</h3>
+                <div class="card">
+                  <div class="t">
+                    <b>Theme</b><span>Follow the system or force one.</span>
+                  </div>
+                  <div class="sel-box">
+                    System
+                    <svg class="i" style="width: 12px">
+                      <use href="#chev" />
+                    </svg>
+                  </div>
+                </div>
+                <h3>SEARCH WINDOW BACKGROUND</h3>
+                <div class="card">
+                  <div class="t">
+                    <b>Transparency</b
+                    ><span
+                      >Blurred effect behind the search window. Other windows
+                      stay solid.</span
+                    >
+                  </div>
+                  <div class="sel-box">
+                    Match system
+                    <svg class="i" style="width: 12px">
+                      <use href="#chev" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="t">
+                    <b>Intensity</b
+                    ><span
+                      style="
+                        display: flex;
+                        justify-content: space-between;
+                        width: 200px;
+                        margin-top: 4px;
+                      "
+                      ><span>More solid</span
+                      ><span>More transparent</span></span
+                    >
+                  </div>
+                  <div class="slider"><i></i></div>
+                </div>
+                <div class="card">
+                  <div class="t">
+                    <b>Intensity</b
+                    ><span
+                      >Disabled: the effective background is solid (Windows 10
+                      or “Reduce transparency” on).</span
+                    >
+                  </div>
+                  <div class="slider off"><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 Index -->
+        <div class="frame">
+          <div class="lbl">5 · Index <em>stats, errors, clear</em></div>
+          <div class="win" style="position: relative">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a
+                  ><svg class="i"><use href="#folder" /></svg>Folders</a
+                >
+                <a
+                  ><svg class="i"><use href="#sparkle" /></svg>Search
+                  features</a
+                >
+                <a
+                  ><svg class="i"><use href="#gear" /></svg>General</a
+                >
+                <a
+                  ><svg class="i"><use href="#pal" /></svg>Appearance</a
+                >
+                <a class="on"
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+                <span class="ver">Magi 0.1.0</span>
+              </div>
+              <div class="pane">
+                <h1>Index</h1>
+                <div class="stats">
+                  <div class="stat">
+                    <b>12,480</b><span>Files indexed</span>
+                  </div>
+                  <div class="stat"><b>184k</b><span>Text chunks</span></div>
+                  <div class="stat"><b>642 MB</b><span>Index size</span></div>
+                  <div class="stat"><b>3</b><span>Errors</span></div>
+                </div>
+                <h3>FILES THAT COULD NOT BE READ</h3>
+                <div class="stack">
+                  <div class="card">
+                    <svg class="i ic" style="color: var(--err)">
+                      <use href="#alert" />
+                    </svg>
+                    <div class="t">
+                      <b>tax-2023.pdf</b
+                      ><span>Password protected · D:\Projects\docs</span>
+                    </div>
+                    <span class="btn">Retry</span>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic" style="color: var(--err)">
+                      <use href="#alert" />
+                    </svg>
+                    <div class="t">
+                      <b>old-archive.docx</b
+                      ><span>Corrupt file · C:\Users\Camilo\Documents</span>
+                    </div>
+                    <span class="btn">Retry</span>
+                  </div>
+                  <div class="card">
+                    <svg class="i ic" style="color: var(--err)">
+                      <use href="#alert" />
+                    </svg>
+                    <div class="t">
+                      <b>scan-0091.heic</b
+                      ><span>Image too large (&gt; 64 MP) · Pictures</span>
+                    </div>
+                    <span class="btn">Retry</span>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 2px">
+                  <span
+                    class="btn"
+                    style="display: inline-flex; gap: 6px; align-items: center"
+                    ><svg class="i" style="width: 13px; height: 13px">
+                      <use href="#refresh" /></svg
+                    >Retry all</span
+                  >
+                </div>
+                <h3>DANGER ZONE</h3>
+                <div class="card" style="border-color: var(--err)">
+                  <div class="t">
+                    <b>Clear index</b
+                    ><span
+                      >Deletes everything Magi learned. Your files are never
+                      touched.</span
+                    >
+                  </div>
+                  <span class="btn dng">Clear index…</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">5b · Clear index confirmation</div>
+          <div class="win" style="position: relative; filter: none">
+            <div class="title">
+              <svg class="i"><use href="#gear" /></svg>Settings<span class="wc"
+                ><span>—</span><span>☐</span><span>✕</span></span
+              >
+            </div>
+            <div class="wbody">
+              <div class="nav">
+                <a
+                  ><svg class="i"><use href="#chart" /></svg>Index</a
+                >
+              </div>
+              <div class="pane"><h1>Index</h1></div>
+            </div>
+            <div class="scrim">
+              <div class="dlg">
+                <h4>Clear the index?</h4>
+                <p>
+                  All 12,480 indexed files will be forgotten and re-scanned from
+                  scratch. Your files and folders are not modified. This can
+                  take a while.
+                </p>
+                <div class="a">
+                  <span class="btn">Cancel</span
+                  ><span
+                    class="btn pri"
+                    style="background: var(--err); color: #fff"
+                    >Clear index</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =================== TRAY =================== -->
+      <h2 id="tray">03 · Tray</h2>
+      <p class="note">
+        Windows notification area, macOS menu bar and Linux AppIndicator share
+        one menu (SPEC FR-8): status line, Open search, Pause/Resume, Settings,
+        Quit. Strings come from the same i18n table as the app. Left-click on
+        the icon = Open search; right-click = menu.
+      </p>
+
+      <div class="row">
+        <div class="frame">
+          <div class="lbl">Icon states</div>
+          <div class="icons">
+            <div>
+              <span class="ti"
+                ><svg class="mark"><use href="#mk" /></svg></span
+              >Idle
+            </div>
+            <div>
+              <span class="ti"
+                ><svg class="mark"><use href="#mk" /></svg
+                ><i class="ov o-busy"></i></span
+              >Indexing
+            </div>
+            <div>
+              <span class="ti"
+                ><svg class="mark"><use href="#mk" /></svg
+                ><i class="ov o-pause"></i></span
+              >Paused
+            </div>
+            <div>
+              <span class="ti"
+                ><svg class="mark"><use href="#mk" /></svg
+                ><i class="ov o-err"></i></span
+              >Needs attention
+            </div>
+          </div>
+          <div class="lbl">
+            <em
+              >Monochrome glyph (template image on macOS); a small colored dot
+              overlay carries the state. Tooltip = status line.</em
+            >
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">
+            Windows 11 · tray with menu open <em>indexing</em>
+          </div>
+          <div
+            class="desk"
+            style="
+              padding: 28px 0 0;
+              width: 560px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+              gap: 6px;
+            "
+          >
+            <div class="tmenu" style="margin-right: 60px">
+              <div class="status">
+                <i class="dot busy"></i>
+                <div>
+                  <b>Indexing, 9,378 files to go</b>Magi · 3 folders watched
+                </div>
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#search" /></svg>Open search<kbd
+                  >Ctrl+Shift+Space</kbd
+                >
+              </div>
+              <div class="it hov">
+                <svg class="i"><use href="#pause" /></svg>Pause indexing
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#gear" /></svg>Settings…<kbd
+                  >Ctrl+,</kbd
+                >
+              </div>
+              <hr />
+              <div class="it">
+                <svg class="i"><use href="#power" /></svg>Quit
+              </div>
+            </div>
+            <div class="taskbar" style="width: 100%">
+              <span class="ti"
+                ><svg class="i"><use href="#chev" /></svg
+              ></span>
+              <span class="ti hi"
+                ><svg class="mark"><use href="#mk" /></svg
+                ><i class="ov o-busy"></i
+              ></span>
+              <span class="ti"
+                ><svg class="i"><use href="#wifi" /></svg
+              ></span>
+              <span class="clock">10:42<br />30/09/2026</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="lbl">
+            Menu variants <em>status line + Pause/Resume toggle</em>
+          </div>
+          <div class="desk" style="display: flex; gap: 20px; padding: 28px">
+            <div class="tmenu">
+              <div class="status">
+                <i class="dot"></i>
+                <div><b>Up to date</b>12,480 files</div>
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#search" /></svg>Open search<kbd
+                  >Ctrl+Shift+Space</kbd
+                >
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#pause" /></svg>Pause indexing
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#gear" /></svg>Settings…
+              </div>
+              <hr />
+              <div class="it">
+                <svg class="i"><use href="#power" /></svg>Quit
+              </div>
+            </div>
+            <div class="tmenu">
+              <div class="status">
+                <i class="dot pause"></i>
+                <div>
+                  <b>Indexing paused</b>On battery · 9,378 files waiting
+                </div>
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#search" /></svg>Open search<kbd
+                  >Ctrl+Shift+Space</kbd
+                >
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#play" /></svg>Resume indexing
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#gear" /></svg>Settings…
+              </div>
+              <hr />
+              <div class="it">
+                <svg class="i"><use href="#power" /></svg>Quit
+              </div>
+            </div>
+            <div class="tmenu">
+              <div class="status">
+                <i class="dot err"></i>
+                <div>
+                  <b>Up to date, 3 files could not be read</b>Open Settings →
+                  Index
+                </div>
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#search" /></svg>Open search<kbd
+                  >Ctrl+Shift+Space</kbd
+                >
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#pause" /></svg>Pause indexing
+              </div>
+              <div class="it">
+                <svg class="i"><use href="#gear" /></svg>Settings…
+              </div>
+              <hr />
+              <div class="it">
+                <svg class="i"><use href="#power" /></svg>Quit
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
